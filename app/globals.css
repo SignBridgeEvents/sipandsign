@@ -7,10 +7,12 @@
 @theme inline {
   --font-serif: var(--font-playfair);
   --font-sans: var(--font-inter);
-  --color-wine: #4a1525;
-  --color-wine-deep: #3a0f1c;
-  --color-gold: #c5a059;
-  --color-cream: #faf9f6;
+  --color-wine: #3a1016;
+  --color-wine-deep: #1e090c;
+  --color-ink: #17110f;
+  --color-sand: #e7ddca;
+  --color-gold: #c6a15c;
+  --color-cream: #f7f3ea;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
