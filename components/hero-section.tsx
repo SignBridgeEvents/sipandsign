@@ -15,17 +15,17 @@ export function HeroSection() {
 
       <div className="mx-auto flex max-w-3xl flex-col items-center px-6 py-28 text-center sm:py-36">
         <p className="font-serif text-xl italic text-gold sm:text-2xl">
-          {"A Fun, Casual Night Out\u2014With ASL!"}
+          {"Sip, Socialize & Learn Some ASL With Us!"}
         </p>
 
         <h1 className="mt-4 text-balance font-serif text-4xl font-medium leading-[1.08] text-cream sm:text-6xl">
-          Bay of Quinte Sip &amp; Sign Series
+          Bay of Quinte Sip &amp; Sign
         </h1>
 
         <p className="mt-7 max-w-xl text-pretty font-sans text-base leading-relaxed text-cream/75">
-          Cozy socials, local pairings, and interactive sign language. Our intimate pop-ups in Belleville and the Bay of
-          Quinte are strictly capped to ensure a premium, meaningful experience. Join our invite-only launch list to
-          request access.
+          Intimate pop-up classes blending cozy social hours, regional pairings, and hands-on ASL learning. Attendance is capped
+          per session to guarantee a premium, interactive experience. Join our priority list today to be the first to know
+          about upcoming dates and increase your chances of securing a spot at these exclusive events!
         </p>
 
         <div className="mt-10 w-full max-w-xl">
