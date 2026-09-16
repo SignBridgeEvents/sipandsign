@@ -36,7 +36,7 @@ export function AboutSection() {
 
         <p className="mt-8 max-w-3xl font-sans text-base leading-relaxed text-wine-deep/75">
           {
-            "If you\u2019ve ever said, \u201CI\u2019d love to learn ASL,\u201D your opportunity is here. We get it! So many people want to learn American Sign Language, but fitting an entire course into a busy schedule isn\u2019t always realistic. The Bay of Quinte Sip & Sign Series turns beginner learning into a relaxed, interactive social experience. Instead of sitting in a traditional classroom, you get to drop in for engaging social sessions paired with local flavours:"
+            "If you\u2019ve ever said, \u201CI\u2019d love to learn ASL,\u201D your opportunity is here. We get it! So many people want to learn American Sign Language, but fitting an entire course into a busy schedule isn\u2019t always realistic.The Bay of Quinte Sip & Sign Series turns beginner learning into a relaxed, interactive social experience. Instead of sitting in a traditional classroom, you get to drop in for engaging social sessions paired with local flavours:"
           }
         </p>
 
