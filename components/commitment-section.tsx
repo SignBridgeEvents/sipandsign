@@ -1,8 +1,8 @@
-import { Hand, Handshake, MapPin } from "lucide-react"
+import { BookOpen, Handshake, MapPin } from "lucide-react"
 
 const values = [
   {
-    icon: Hand,
+    icon: BookOpen,
     eyebrow: "Deaf-Led Excellence",
     title: "100% Deaf-Led Instruction",
     description:
