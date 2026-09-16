@@ -6,13 +6,13 @@ export function WaitlistFooter() {
       <section className="bg-cream px-6 py-24 text-wine-deep sm:py-28">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-balance font-serif text-4xl font-medium leading-[1.1] sm:text-5xl">
-            Strictly Limited to 16 Exclusive Seats
+            Strictly Limited, Exclusive Seats
           </h2>
 
           <p className="mx-auto mt-8 max-w-2xl font-sans text-base leading-relaxed text-wine-deep/70">
             To maintain clear sightlines and an authentic, intimate atmosphere, each session is capped. This is an
             exclusive opportunity to connect deeply. Join the priority waitlist to secure your chance to attend our
-            October Launch Pop-Ups across Belleville and the Bay of Quinte!
+            events across the region!
           </p>
 
           <div className="mx-auto mt-10 max-w-xl">
