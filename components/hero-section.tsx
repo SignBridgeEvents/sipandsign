@@ -25,7 +25,7 @@ export function HeroSection() {
         <p className="mt-7 max-w-xl text-pretty font-sans text-base leading-relaxed text-cream/75">
           Intimate pop-up classes blending cozy social hours, regional pairings, and hands-on ASL learning. Attendance is capped
           per session to guarantee a premium, interactive experience. Join our priority list today to be the first to know
-          about upcoming dates and increase your chances of securing a spot at these exclusive events!
+          when dates are locked and increase your chances of securing a spot at these exclusive events!
         </p>
 
         <div className="mt-10 w-full max-w-xl">
