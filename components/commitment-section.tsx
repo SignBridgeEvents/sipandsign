@@ -1,8 +1,22 @@
-import { BookOpen, Handshake, MapPin } from "lucide-react"
+import { Handshake, MapPin } from "lucide-react"
+
+function IlyHandIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" className={className}>
+      <path
+        d="M20 60v-9c0-5-1-9-4-14L6 23c-2-4-1-7 2-9s6 0 8 3l9 13c2 3 6 4 9 1l8-25c1-4 4-6 7-5s4 4 3 8l-6 25m-4-3c2-4 6-5 9-3 3 2 3 6 1 9l-5 7c-3 4-8 5-12 2-3-2-4-6-2-10l3-5m9-1 8-16c2-4 5-5 8-3s3 5 1 9L53 43c-2 5-4 9-4 14v3"
+        stroke="currentColor"
+        strokeWidth="2.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
 
 const values = [
   {
-    icon: BookOpen,
+    icon: IlyHandIcon,
     eyebrow: "Deaf-Led Excellence",
     title: "100% Deaf-Led Instruction",
     description:
