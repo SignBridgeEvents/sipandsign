@@ -32,7 +32,14 @@ export function SignupForm({ buttonLabel, id, variant = "dark" }: SignupFormProp
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:flex-row sm:items-stretch">
+    <form
+      onSubmit={handleSubmit}
+      className={`flex w-full items-center gap-2 rounded-full border p-1.5 transition-colors focus-within:ring-2 ${
+        isLight
+          ? "border-wine/35 bg-white/75 focus-within:border-wine focus-within:ring-wine/15"
+          : "border-gold/40 bg-wine-deep/45 focus-within:border-gold/75 focus-within:ring-gold/20"
+      }`}
+    >
       <label htmlFor={id} className="sr-only">
         Email address
       </label>
@@ -42,19 +49,17 @@ export function SignupForm({ buttonLabel, id, variant = "dark" }: SignupFormProp
         required
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-        placeholder="Email"
-        className={`flex-1 rounded-full border px-6 py-3.5 font-sans text-sm outline-none transition-colors focus-visible:ring-2 ${
-          isLight
-            ? "border-wine/30 bg-white/70 text-wine-deep placeholder:text-wine-deep/40 focus-visible:border-wine focus-visible:ring-wine/20"
-            : "border-gold/40 bg-cream/5 text-cream placeholder:text-cream/40 focus-visible:border-gold focus-visible:ring-gold/30"
+        placeholder="Your email"
+        className={`min-w-0 flex-1 bg-transparent px-4 py-3 font-sans text-sm outline-none placeholder:opacity-65 sm:px-5 ${
+          isLight ? "text-wine-deep placeholder:text-wine-deep" : "text-cream placeholder:text-cream"
         }`}
       />
       <button
         type="submit"
-        className={`whitespace-nowrap rounded-full border px-7 py-3.5 font-sans text-sm font-semibold tracking-wide transition-colors duration-300 ${
+        className={`shrink-0 whitespace-nowrap rounded-full px-4 py-3 font-sans text-xs font-semibold transition-colors duration-300 sm:px-6 sm:text-sm ${
           isLight
-            ? "border-wine bg-wine text-cream hover:bg-wine-deep"
-            : "border-gold bg-gold/10 text-gold hover:bg-gold hover:text-wine-deep"
+            ? "bg-wine text-cream hover:bg-wine-deep"
+            : "bg-gold text-wine-deep hover:bg-sand"
         }`}
       >
         {buttonLabel}
