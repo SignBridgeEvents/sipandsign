@@ -29,7 +29,7 @@ export function HeroSection() {
         </p>
 
         <div className="mt-10 w-full max-w-xl">
-          <SignupForm id="hero-email" buttonLabel="Join the Waitlist" />
+          <SignupForm id="hero-email" buttonLabel="Join" />
         </div>
       </div>
     </section>
