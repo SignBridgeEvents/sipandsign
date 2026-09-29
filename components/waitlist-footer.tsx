@@ -17,6 +17,10 @@ export function WaitlistFooter() {
 
           <div className="mx-auto mt-10 max-w-xl">
             <SignupForm id="footer-email" buttonLabel="< Join the Priority Waitlist >" variant="light" />
+            <p className="mx-auto mt-4 max-w-lg font-sans text-xs leading-relaxed text-wine-deep/60">
+              Be first to know, and first in line for a seat. By joining you agree to receive emails from Bay of Quinte
+              Sip &amp; Sign. Unsubscribe anytime.
+            </p>
           </div>
         </div>
       </section>
