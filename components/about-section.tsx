@@ -1,24 +1,18 @@
-import Image from "next/image"
-import { Plus } from "lucide-react"
-
 const blocks = [
   {
-    src: "/images/wine.png",
-    alt: "Wine and charcuterie board at a local winery",
+    number: "01",
     title: "Wine & Charcuterie",
-    place: "at local regional wineries",
+    place: "At local regional wineries",
   },
   {
-    src: "/images/coffee.png",
-    alt: "Coffee and pastries at a cozy Belleville cafe",
+    number: "02",
     title: "Coffee & Pastries",
-    place: "at cozy Belleville cafes",
+    place: "At cozy Belleville cafes",
   },
   {
-    src: "/images/taproom.png",
-    alt: "Craft beer flight and bites at a neighborhood taproom",
+    number: "03",
     title: "Craft Brews & Bites",
-    place: "at neighborhood taprooms",
+    place: "At neighborhood taprooms",
   },
 ]
 
@@ -35,41 +29,35 @@ export function AboutSection() {
         </h2>
 
         <p className="mt-8 max-w-3xl font-sans text-base leading-relaxed text-wine-deep/75">
-          {
-            "If you\u2019ve ever said, \u201CI\u2019d love to learn ASL,\u201D your opportunity is here. We get it! So many people want to learn American Sign Language, but fitting an entire course into a busy schedule isn\u2019t always realistic.The Bay of Quinte Sip & Sign Series turns beginner learning into a relaxed, interactive social experience. Instead of sitting in a traditional classroom, you get to drop in for engaging social sessions paired with local flavours:"
-          }
+          If you&apos;ve ever said, “I&apos;d love to learn ASL,” your opportunity is here. We get it! So many people want to
+          learn American Sign Language, but fitting an entire course into a busy schedule isn&apos;t always realistic. The Bay
+          of Quinte Sip &amp; Sign Series turns beginner learning into a relaxed, interactive social experience. Instead of
+          sitting in a traditional classroom, you get to drop in for engaging social sessions paired with local flavours:
         </p>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-3">
+        <div className="mt-12 grid gap-x-8 sm:grid-cols-3">
           {blocks.map((block) => (
-            <article
-              key={block.title}
-              className="group relative aspect-[4/5] overflow-hidden rounded-lg"
-            >
-              <Image
-                src={block.src || "/placeholder.svg"}
-                alt={block.alt}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-                sizes="(max-width: 640px) 100vw, 33vw"
-              />
-              <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-wine-deep/90 via-wine-deep/40 to-wine-deep/20" />
-              <div className="absolute inset-0 flex flex-col justify-between p-6">
-                <Plus className="h-5 w-5 text-gold" strokeWidth={1.5} aria-hidden="true" />
-                <div>
-                  <h3 className="font-serif text-xl font-medium leading-snug text-cream">{block.title}</h3>
-                  <p className="mt-1 font-sans text-sm text-cream/70">{block.place}</p>
-                </div>
-              </div>
+            <article key={block.number} className="border-t border-wine/25 py-6 sm:py-8">
+              <p className="font-sans text-xs font-semibold tracking-[0.2em] text-wine/70">{block.number}</p>
+              <h3 className="mt-4 font-serif text-2xl font-medium leading-snug text-wine-deep">
+                {block.title}
+              </h3>
+              <p className="mt-2 font-sans text-sm leading-relaxed text-wine-deep/65">{block.place}</p>
             </article>
           ))}
         </div>
 
-        <p className="mt-14 max-w-3xl font-serif text-2xl font-medium leading-snug text-wine sm:text-3xl">
-          {
-            "Whether you join us for a single session or attend every month, every gathering delivers tangible, real-world value. You\u2019ll master foundational vocabulary, basic fingerspelling, and essential social signs, from introducing yourself and greeting friends to ordering food and drinks. You\u2019ll walk away with usable visual communication skills, elevated confidence, and genuine local connections every time."
-          }
-        </p>
+        <div className="mt-10 border-l-2 border-gold py-1 pl-6 sm:mt-12 sm:pl-8">
+          <p className="font-sans text-xs font-semibold uppercase tracking-[0.2em] text-wine/65">
+            What you&apos;ll take away
+          </p>
+          <p className="mt-4 max-w-4xl font-serif text-2xl font-medium leading-snug text-wine sm:text-3xl">
+            Whether you join us for a single session or attend every month, every gathering delivers tangible, real-world
+            value. You&apos;ll master foundational vocabulary, basic fingerspelling, and essential social signs, from
+            introducing yourself and greeting friends to ordering food and drinks. You&apos;ll walk away with usable visual
+            communication skills, elevated confidence, and genuine local connections every time.
+          </p>
+        </div>
       </div>
     </section>
   )
