@@ -30,7 +30,7 @@ export function AboutSection() {
 
         <p className="mt-8 max-w-3xl font-sans text-base leading-relaxed text-wine-deep/75">
           If you&apos;ve ever said, “I&apos;d love to learn ASL,” your opportunity is here. We get it! So many people want to
-          learn American Sign Language, but fitting an entire course into a busy schedule isn&apos;t always realistic. The Bay
+          learn ASL, but fitting an entire course into a busy schedule isn&apos;t always realistic. The Bay
           of Quinte Sip &amp; Sign Series turns beginner learning into a relaxed, interactive social experience. Instead of
           sitting in a traditional classroom, you get to drop in for engaging social sessions paired with local flavours:
         </p>
